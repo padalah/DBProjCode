@@ -1,0 +1,8 @@
+Miscellaneous Notes, Needed Fixes: 
+
+1) Coupon table should have a new field called restaurant name else showing info on coupons to users is not helpful without the restaurant name.
+
+2) listUser-inc.php is a redundant file and duplicates code on listUsers.php. I removed listUser-inc.php and the functionality still works.
+
+3) Inserting into Reviews, the user shouldn't have to know a restaurant ID to insert a new Review. The way we have it setup right now is that a review can't be added by leaving restaurant ID null. The other issue is that a user isn't able to add a review for an existing restaurant ID. 
+
